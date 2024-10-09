@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: black;
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: yellow;
+
+}
+
+.star-wars-intro {
+    position: relative;
+    height: 100vh;
+    background: black;
+    overflow: hidden;
+    color: yellow;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    perspective: 800px;
+}
+
+.crawl {
+    position: absolute;
+    bottom: -100%;
+    width: 100%;
+    transform: rotateX(30deg);
+    animation: crawl 10s linear forwards;
+    scale: 0.9;
+}
+
+@keyframes crawl {
+    0% { bottom: -100%; }
+    100% { bottom: 0; }
+}
+
+.intro p, .intro h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+}
+
+.intro h1 {
+    margin: 10px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; 
+}
+
+.tiposDePersonajes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.tiposDePersonajes h2 {
+    padding: 10px;
+    text-shadow:  1px 1px 0 #000,
+    -1px 1px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000;
+}
+
+.tiposDePersonajes p {
+    padding: 0 10px 10px 10px;
+    text-shadow:  1px 1px 0 #000,
+    -1px 1px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000;
+}
+
+.principales {
+    background-color: rgb(250 128 114);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 1, 1);
+    padding: 10px;
+}
+
+.secundarios {
+    background-color: rgb(144 238 144);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 1, 1);
+    padding: 10px;
+}
+
+.otros {
+    background-color: rgb(135 206 250);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 1, 1);
+    padding: 10px;
+}
+
+.character-info {
+    display: flex;
+    padding: 20px 0;
+    gap: 20px;
+    width: 500px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: lightcyan;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 1, 1);
+    text-align: center;
+    padding: 10px;
+    width: 230px;
+}
+
+.card h3 {
+    text-shadow:  1px 1px 0 #000,
+    -1px 1px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000;
+}
+
+.card p {
+    color: slategray;
+}
