@@ -24,7 +24,7 @@ h1 {
     color: yellow;
     font-family: 'Arial', sans-serif;
     text-align: center;
-    perspective: 800px;
+    perspective: 600px;
 }
 
 .crawl {
@@ -33,7 +33,6 @@ h1 {
     width: 100%;
     transform: rotateX(30deg);
     animation: crawl 10s linear forwards;
-    scale: 0.9;
 }
 
 @keyframes crawl {
@@ -44,17 +43,18 @@ h1 {
 .intro p, .intro h1 {
     margin: 0;
     padding: 0;
-    font-size: 30px;
+    font-size: 50px;
 }
 
 .intro h1 {
-    margin: 10px 0;
+    margin: 30px 0;
 }
 
 .container {
     display: flex;
     justify-content: center;
-    margin-top: 20px; 
+    margin-top: 25px;
+    margin-bottom: 100px;
 }
 
 .tiposDePersonajes {
@@ -63,7 +63,7 @@ h1 {
     gap: 20px;
     padding: 20px;
     justify-content: space-between;
-    width: 400px;
+    width: 500px;
 }
 
 .tiposDePersonajes h2 {
@@ -72,6 +72,7 @@ h1 {
     -1px 1px 0 #000,
     -1px -1px 0 #000,
     1px -1px 0 #000;
+    font-size: 30px;
 }
 
 .tiposDePersonajes p {
@@ -80,6 +81,7 @@ h1 {
     -1px 1px 0 #000,
     -1px -1px 0 #000,
     1px -1px 0 #000;
+    font-size: 20px;
 }
 
 .principales {
@@ -107,7 +109,7 @@ h1 {
     display: flex;
     padding: 20px 0;
     gap: 20px;
-    width: 500px;
+    width: 600px;
     flex-wrap: wrap;
 }
 
@@ -117,7 +119,7 @@ h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 1, 1);
     text-align: center;
     padding: 10px;
-    width: 230px;
+    width: 280px;
 }
 
 .card h3 {
@@ -125,8 +127,10 @@ h1 {
     -1px 1px 0 #000,
     -1px -1px 0 #000,
     1px -1px 0 #000;
+    font-size: 25px;
 }
 
 .card p {
     color: slategray;
+    font-size: 20px;
 }
